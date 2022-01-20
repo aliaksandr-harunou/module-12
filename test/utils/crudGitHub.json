@@ -1,0 +1,11 @@
+[
+    {
+        "uri": "/gists",
+        "method": "GET",
+        "headers": {
+            "Authorization": "token ******",
+            "user-agent": "node.js",
+            "accept": "application/vnd.github.v3+json"
+        }
+    }
+]
