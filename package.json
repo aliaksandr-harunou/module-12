@@ -4,7 +4,7 @@
   "description": "automate web-services",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --config ./test/config/mocha.config.js"
+    "test": "mocha --config ./test/config/mocha.config.js --parallel"
   },
   "repository": {
     "type": "git",

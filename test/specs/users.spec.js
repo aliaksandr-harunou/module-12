@@ -1,7 +1,7 @@
 const expect = require('chai').expect;
 const sendRequest = require('../utils/sendRequest');
-const getUsers = require('../utils/getUsers.json');
-const env = require('../utils/endpoint.js');
+const getUsers = require('../utils/users_data/getUsers.json');
+const env = require('../utils/endpoints/endpoints');
 
 
 describe('Get users', () => {
@@ -10,8 +10,12 @@ describe('Get users', () => {
         let response;
 
         before(async () => {
-            data.uri = env.jsonplaceholder + data.uri;
+            data.uri = env.JSON_PLACEHOLDER + data.uri;
             response = await sendRequest(data);
+        });
+
+        it('Response status code should be 200', () => {
+            expect(response.statusCode).to.eql(200);
         });
 
         it('Response headers should contain "content-type"', () => {
@@ -20,6 +24,10 @@ describe('Get users', () => {
 
         it('Response header "content-type" should contain "application/json; charset=utf-8"', () => {
             expect(response.headers['content-type']).to.be.eql('application/json; charset=utf-8');
+        });
+
+        it('Response should contain array of 10 users', () => {
+            expect(response.body.length).to.eql(10);
         });
     });
 

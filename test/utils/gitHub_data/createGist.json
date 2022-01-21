@@ -1,0 +1,17 @@
+{
+    "uri": "/gists",
+    "method": "POST",
+    "headers": {
+        "Authorization": "token ***",
+        "user-agent": "node.js",
+        "accept": "application/vnd.github.v3+json"
+    },
+    "body": {
+        "files": {
+            "hello.js": {
+                "filename": "hello.js",
+                "content": "Hello_worlddddddd"
+            }
+        }
+    }
+}
