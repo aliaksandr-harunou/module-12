@@ -1,6 +1,6 @@
 const expect = require('chai').expect;
 const sendRequest = require('../utils/sendRequest');
-const getUsers = require('../utils/users_data/getUsers.json');
+const getUsers = require('../utils/usersData/getUsers.json');
 const env = require('../utils/endpoints/endpoints');
 
 

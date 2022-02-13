@@ -2,7 +2,7 @@
     "uri": "/gists",
     "method": "POST",
     "headers": {
-        "Authorization": "token ***",
+        "Authorization": "token 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",
         "user-agent": "node.js",
         "accept": "application/vnd.github.v3+json"
     },

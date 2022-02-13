@@ -1,9 +1,9 @@
 const expect = require('chai').expect;
 const sendRequest = require('../utils/sendRequest');
-const createData = require('../utils/gitHub_data/createGist.json');
-const updateData = require('../utils/gitHub_data/updateGist.json');
-const deleteData = require('../utils/gitHub_data/deleteGist.json');
-const getData = require('../utils/gitHub_data/getGist.json');
+const createData = require('../utils/githubData/createGist.json');
+const updateData = require('../utils/githubData/updateGist.json');
+const deleteData = require('../utils/githubData/deleteGist.json');
+const getData = require('../utils/githubData/getGist.json');
 const env = require('../utils/endpoints/endpoints');
 
 
@@ -36,8 +36,8 @@ describe('GithubGist operations', () => {
         expect(createResponse.body.files['hello.js'].content).to.eql("Hello_worlddddddd");
     });
 
-    it(`Number of gists should be 1`, () => {
-        expect(getResponse.body.length).to.eql(1);
+    it(`Number of gists should be 3`, () => {
+        expect(getResponse.body.length).to.eql(3);
     });
 
     it(`Description should be updated to "new description"`, () => {
@@ -52,7 +52,7 @@ describe('GithubGist operations', () => {
         expect(deleteResponse.body).to.eql(undefined);
     });
 
-    it(`Number of gists should be 0`, () => {
-        expect(secondGetResponse.body.length).to.eql(0);
+    it(`Number of gists should be 2`, () => {
+        expect(secondGetResponse.body.length).to.eql(2);
     });
 });
