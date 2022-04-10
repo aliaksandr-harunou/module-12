@@ -1,1 +1,8 @@
-# module-12
+# installation
+```
+npm install
+```
+# run tests
+```
+npm test
+```

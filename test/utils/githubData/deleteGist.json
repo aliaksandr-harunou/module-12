@@ -1,0 +1,10 @@
+{
+    "uri": "/gists/",
+    "method": "DELETE",
+    "headers": {
+        "Authorization": "token ***",
+        "user-agent": "node.js",
+        "accept": "application/vnd.github.v3+json"
+    },
+    "body": {}
+}

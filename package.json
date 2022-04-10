@@ -1,0 +1,30 @@
+{
+  "name": "module-12",
+  "version": "1.0.0",
+  "description": "automate web-services",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --config ./test/config/mocha.config.js --parallel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliaksandr-harunou/module-12.git"
+  },
+  "keywords": [
+    "web-service",
+    "testing"
+  ],
+  "author": "Aliaksandr_Harunou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliaksandr-harunou/module-12/issues"
+  },
+  "homepage": "https://github.com/aliaksandr-harunou/module-12#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.4",
+    "mochawesome": "^7.0.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
+  }
+}
